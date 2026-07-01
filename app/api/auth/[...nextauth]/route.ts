@@ -32,6 +32,8 @@ const handler = NextAuth({
           return null
         }
 
+        // Fixed: Removed invalid signUp property
+
         return {
           id: user.id,
           email: user.email,
